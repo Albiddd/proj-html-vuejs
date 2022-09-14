@@ -1,20 +1,33 @@
 <template>
-    <div class="">
-   
-    </div>
+    <header class="">
+        <div class="logo">
+            <img src="../assets/img/logo-sidearea-1.png" alt="">
+        </div>
+        <div>
+          <NavBar/>
+        </div>
+    </header>
   </template>
   
   <script>
+import NavBar from './NavBar.vue';
   export default {
-    name: 'HelloWorld',
-    props: {
-  
-    }
-  }
+    name: "MainHeader",
+    props: {},
+    components: { NavBar }
+}
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-  
+    
+    header{
+      background-color: white;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
   </style>
   
