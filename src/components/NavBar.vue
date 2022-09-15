@@ -37,15 +37,22 @@
   
     .menu{
         display: flex;
-        gap: 20px;
+        gap: 28px;
         ul{
             display: flex;
+            align-items: center;
+            height: 100%;
             a{
-                padding: 0 30px;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: .25em;
                 text-transform: uppercase;
-                color: black;
-                font-weight: 600;
-                font-size: 14px;
+                color: #000;
+                line-height: 14px;
             }
         }
     }
