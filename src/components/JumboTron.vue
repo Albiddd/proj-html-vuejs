@@ -19,7 +19,7 @@
             <p>{{ slide.caption }}</p>
             <button class="btn">{{ slide.button }}</button>
           </div>
-          <div :class="`hero-img${currentSlide}`" class="hero-img col">
+          <div :class="`hero-img${index}`" class="hero-img col">
             <div class="img-wrapper">
               <img
                 v-for="(img, i) in slide.imgs"
@@ -28,7 +28,6 @@
                 :src="require(`../assets/img/${img}`)"
                 alt=""
               />
-
             </div>
           </div>
         </li>
@@ -142,6 +141,10 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
+
+@import "../style/first-slide.scss" ;
+
+
 .slider-container {
   position: relative;
   padding: 50px 0;
@@ -158,7 +161,7 @@ export default {
         width: 50%;
         .slide-title {
           font-size: 92px;
-          font-weight: 200;
+          font-weight: 300;
           line-height: 1.1;
           strong {
             font-style: italic;
@@ -181,126 +184,13 @@ export default {
           line-height: 22px;
           font-size: 13px;
           font-weight: 700;
-          letter-spacing: .25em;
+          letter-spacing: 0.25em;
           &:hover {
             background-color: #e1c0b0;
             color: white;
           }
         }
       }
-    }
-  }
-
-  // IMG BASE
-  .hero-img0 {
-    
-    .img-wrapper{
-      position: relative;
-      width: 100%;
-      img {
-        position: absolute;
-      }
-      // main img
-      .img0 {
-        width: 80%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%,);
-      }
-      // foglia rossa sx
-      .img1 {
-        z-index: 6;
-        bottom: 285px;
-        left: -10px;
-        width: 8%;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      // foglia rossa dx
-      .img2 {
-        z-index: 6;
-        bottom: 285px;
-        right: -10px;
-        width: 7%;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      //pianta verde sx
-      .img3 {
-        z-index: 6;
-        bottom: 48px;
-        left: -60px;
-        width: 20%;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      // nuvola marrone
-      .img4 {
-        z-index: 6;
-        bottom: 415px;
-        right: -41px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      //nuvola verde
-      .img5 {
-        z-index: 5;
-        bottom: 415px;
-        right: -100px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      //piantina scura sx
-      .img6 {
-        z-index: 6;
-        bottom: 48px;
-        left: 85px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      // piantina verde dx
-      .img7 {
-        z-index: 6;
-        bottom: 48px;
-        right: 50px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      // foglia verde grande dx
-      .img8 {
-        z-index: 6;
-        bottom: 48px;
-        right: -70px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-      // fogliolina marrone dx
-      .img9 {
-        z-index: 6;
-        bottom: 48px;
-        right: -125px;
-        transform-origin: 50% 50%;
-        opacity: 1;
-        transform: translate(0px, 0px);
-        visibility: visible;
-      }
-
     }
   }
 

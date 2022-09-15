@@ -1,0 +1,91 @@
+ // IMG BASE
+ .hero-img0 {
+    
+    .img-wrapper{
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+      }
+      // main img
+      .img0 {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%,);
+      }
+      // foglia rossa sx
+      .img1 {
+        z-index: 6;
+        bottom: 285px;
+        left: -10px;
+        opacity: 1;
+        visibility: visible;
+      }
+      // foglia rossa dx
+      .img2 {
+        z-index: 6;
+        bottom: 285px;
+        right: -10px;
+        opacity: 1;
+        visibility: visible;
+      }
+      //pianta verde sx
+      .img3 {
+        z-index: 6;
+        bottom: 48px;
+        left: -60px;
+        opacity: 1;
+        visibility: visible;
+      }
+      // nuvola marrone
+      .img4 {
+        z-index: 6;
+        bottom: 415px;
+        right: -41px;
+        opacity: 1;
+        visibility: visible;
+      }
+      //nuvola verde
+      .img5 {
+        z-index: 5;
+        bottom: 415px;
+        right: -100px;
+        opacity: 1;
+        visibility: visible;
+      }
+      //piantina scura sx
+      .img6 {
+        z-index: 6;
+        bottom: 48px;
+        left: 85px;
+        opacity: 1;
+        visibility: visible;
+      }
+      // piantina verde dx
+      .img7 {
+        z-index: 6;
+        bottom: 48px;
+        right: 50px;
+        opacity: 1;
+        visibility: visible;
+      }
+      // foglia verde grande dx
+      .img8 {
+        z-index: 6;
+        bottom: 48px;
+        right: -70px;
+        opacity: 1;
+        visibility: visible;
+      }
+      // fogliolina marrone dx
+      .img9 {
+        z-index: 6;
+        bottom: 48px;
+        right: -125px;
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+  }
