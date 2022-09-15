@@ -2,7 +2,7 @@
   <div class="jumbotron">
     <div
       class="slider-container"
-      @mouseleave="c"
+      @mouseleave="startAutoplay"
       @mouseenter="stopAutoplay"
     >
       <ul class="slides-wrapper">
@@ -112,7 +112,7 @@ export default {
           ],
         },
       ],
-      currentSlide: 1,
+      currentSlide: 0,
       intervall: null,
     };
   },
@@ -150,11 +150,12 @@ export default {
 
 .slider-container {
   position: relative;
-  padding: 50px 0;
-  height: 580px;
+  padding: 80px 0;
+
   .slides-wrapper {
     max-width: 1350px;
     margin: 0 auto;
+    height: 480px;
     .slide {
       display: none;
     }
