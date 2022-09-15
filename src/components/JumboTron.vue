@@ -211,12 +211,16 @@ export default {
     right: 0;
     transform: translateY(-50%);
     color: white;
+    cursor: pointer;
+
+   
     div {
       background-color: #e1c0b0;
       border-radius: 50%;
       width: 35px;
       height: 35px;
       position: relative;
+      transition: linear 0.2s;
       .arrow-el {
         font-size: 25px;
         position: absolute;
@@ -224,6 +228,12 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
       }
+    }
+    .arrow-prev:hover{
+      background-color: #D8F0E3;
+    }
+    .arrow-next:hover{
+      background-color: #D8F0E3;
     }
   }
 }
