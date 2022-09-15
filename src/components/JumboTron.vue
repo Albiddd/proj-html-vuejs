@@ -135,6 +135,7 @@ export default {
           padding: 12px 35px;
           font-size: 14px;
           border: 3px solid #e1c0b0;
+          transition: linear 0.2s;
           &:hover {
             background-color: #e1c0b0;
             color: white;

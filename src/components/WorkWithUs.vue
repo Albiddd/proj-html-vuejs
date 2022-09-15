@@ -60,6 +60,11 @@ export default {
     background-color: #D8F0E3;
     padding: 17px 70px;
     border: none;
+    transition: linear 0.2s;
+    &:hover{
+      background-color: #e1c0b0;
+      color: white;
+    }
   }
 }
 </style>
