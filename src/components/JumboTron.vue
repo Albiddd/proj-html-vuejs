@@ -1,8 +1,8 @@
 <template>
-  <div class="">
+  <div class="jumbotron">
     <div
       class="slider-container"
-      @mouseleave="startAutoplay"
+      @mouseleave="c"
       @mouseenter="stopAutoplay"
     >
       <ul class="slides-wrapper">
@@ -112,7 +112,7 @@ export default {
           ],
         },
       ],
-      currentSlide: 0,
+      currentSlide: 1,
       intervall: null,
     };
   },
@@ -143,11 +143,15 @@ export default {
   <style scoped lang="scss">
 
 @import "../style/first-slide.scss" ;
+@import "../style/second-slide.scss" ;
+@import "../style/third-slide.scss" ;
+
 
 
 .slider-container {
   position: relative;
   padding: 50px 0;
+  height: 580px;
   .slides-wrapper {
     max-width: 1350px;
     margin: 0 auto;
