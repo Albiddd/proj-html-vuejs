@@ -85,7 +85,7 @@
           overflow: hidden;
           transform: translateX(-200px) translateY(-50%);
           transition: .3s;
-          will-change: unset;
+
         }
         &:hover .details{
           opacity: 1;
