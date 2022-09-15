@@ -190,6 +190,7 @@ export default {
           font-size: 13px;
           font-weight: 700;
           letter-spacing: 0.25em;
+          cursor: pointer;
           &:hover {
             background-color: #e1c0b0;
             color: white;

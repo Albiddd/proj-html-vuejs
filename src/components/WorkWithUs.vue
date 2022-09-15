@@ -61,6 +61,7 @@ export default {
     padding: 17px 70px;
     border: none;
     transition: linear 0.2s;
+    cursor: pointer;
     &:hover{
       background-color: #e1c0b0;
       color: white;
