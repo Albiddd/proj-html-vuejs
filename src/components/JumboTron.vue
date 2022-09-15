@@ -116,11 +116,11 @@ export default {
         width: 50%;
         .slide-title {
           font-size: 92px;
-          font-weight: 300;
+          font-weight: 200;
           line-height: 1.1;
           strong {
             font-style: italic;
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Playfair Display', serif;
           }
         }
         p {

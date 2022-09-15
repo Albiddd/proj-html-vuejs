@@ -23,7 +23,8 @@ import NavBar from './NavBar.vue';
     
     header{
       background-color: white;
-      padding: 30px;
+      padding: 0 40px;
+      height: 100px;
       display: flex;
       justify-content: space-between;
       align-items: center;
