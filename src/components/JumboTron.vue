@@ -34,17 +34,17 @@
       </ul>
 
       <div class="arrows">
-        <div class="arrow-prev">
+        <div class="arrow-prev" 
+        @click="prevSlide()">
           <font-awesome-icon
-            class="arrow-el"
-            @click="prevSlide()"
+            class="arrow-el"  
             icon="fa-solid fa-chevron-left"
           />
         </div>
-        <div class="arrow-next">
+        <div class="arrow-next" 
+        @click="nextSlide()">
           <font-awesome-icon
-            class="arrow-el"
-            @click="nextSlide()"
+            class="arrow-el"   
             icon="fa-solid fa-chevron-right"
           />
         </div>

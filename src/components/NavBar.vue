@@ -7,16 +7,13 @@
             <a href="#">
                 <span>
                     {{element}}
-                    <div :class="`nav-el-${i}`"></div>
+                        <div :class="`nav-el-${i}`"></div>
                 </span>
             </a>
             </li>
-            <!-- <ul class="dropdown">
-                <li v-for="(el, i) in drops" :key="i" class="dropdown-el">{{el}}</li>
-            </ul>             -->
         </ul>
 
-        <div class="">
+        <div class="icon">
             <a href="#"><img src="../assets/svg/svg-1.svg" alt="menu"></a>
         </div>
 
@@ -33,7 +30,7 @@
         return{
             menu : ['Home', 'Pages', 'Portfolio', 'Blog', 'Shop', 'Elements'],
         }
-    }
+    },
   }
   </script>
   
@@ -42,25 +39,34 @@
   
     .menu{
         display: flex;
+
         gap: 28px;
+        height: 100%;
         ul{
             display: flex;
             align-items: center;
             height: 100%;
+            li{
+                height: 100%;
+            }
             a{
                 width: 100%;
                 height: 100%;
                 vertical-align: middle;
-                padding: 0 25px;
+                padding: 20px 25px;
                 font-size: 13px;
                 font-weight: 700;
                 letter-spacing: .25em;
                 text-transform: uppercase;
                 color: #000;
                 line-height: 14px;
+                &:hover div{
+                    width: 100%;
+                }
                 span{
                     position: relative;
                     isolation: isolate;
+                    padding: 3px;
                     div{
                         width: 0;
                         height: 6px;
@@ -71,25 +77,26 @@
                         bottom: 2px;
                         left: 0;
                     }
-                    &:hover div{
+                    .active{
                         width: 100%;
                     }
-                    &:hover .nav-el-0{
+                    
+                    .nav-el-0{
                         background-color: #F0CEBE;
                     }
-                    &:hover .nav-el-1{
+                    .nav-el-1{
                         background-color: #E6E2D1;
                     }
-                    &:hover .nav-el-2{
+                    .nav-el-2{
                         background-color: #D8F0E3;
                     }
-                    &:hover .nav-el-3{
+                    .nav-el-3{
                         background-color: #EBE8F9;
                     }
-                    &:hover .nav-el-4{
+                    .nav-el-4{
                         background-color: #FEF2BD;
                     }
-                    &:hover .nav-el-5{
+                    .nav-el-5{
                         background-color: #FFD9B4;
                     }
                 }

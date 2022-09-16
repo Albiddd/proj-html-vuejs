@@ -1,9 +1,9 @@
 <template>
-    <header class="">
+    <header>
         <div class="logo">
             <img src="../assets/img/logo-sidearea-1.png" alt="">
         </div>
-        <div>
+        <div class="nav">
           <NavBar/>
         </div>
     </header>
@@ -28,6 +28,7 @@ import NavBar from './NavBar.vue';
       display: flex;
       justify-content: space-between;
       align-items: center;
+
     }
 
   </style>
