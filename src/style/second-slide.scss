@@ -7,50 +7,50 @@
         }
         // main img
         .img0 {
-            width: 105%;
+            width: 110%;
             position: relative;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 40%;
+            transform: translateX(-40%);
           }
         // foglia rossa sx
         .img1{
             z-index: 99;
-            bottom: 330px;
-            left: -30px;
+            bottom: 62%;
+            left: -5%;
+            width: 8%;
             opacity: 1;
-            visibility: visible;
         }
         //   foglia rossa dx
         .img2{
             z-index: 99;
-            bottom: 450px;
-            right: 50px;
+            bottom: 91%;
+            right: 4%;
+            width: 7%;
             opacity: 1;
-            visibility: visible;
         }
         //foglia marrone sx
         .img3{
             z-index: 99;
-            bottom: 90px;
-            left: -70px;
+            bottom: 20%;
+            left: -13%;
+            width: 7%;
             opacity: 1;
-            visibility: visible;
         }
         //piantina verde sx
         .img4{
             z-index: 99;
-            bottom: 10px;
-            left: 5px;
+            bottom: 2%;
+            left: 0%;
+            width: 8%;
             opacity: 1;
-            visibility: visible;
         }
         //piantina scura dx
         .img5{
             z-index: 99;
-            bottom: 20px;
-            right: 45px;
+            bottom: 3%;
+            right: 4%;
+            width: 9%;
             opacity: 1;
-            visibility: visible;
         }
 
     }

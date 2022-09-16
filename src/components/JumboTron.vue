@@ -141,12 +141,9 @@ export default {
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-
-@import "../style/first-slide.scss" ;
-@import "../style/second-slide.scss" ;
-@import "../style/third-slide.scss" ;
-
-
+@import "../style/first-slide.scss";
+@import "../style/second-slide.scss";
+@import "../style/third-slide.scss";
 
 .slider-container {
   position: relative;
@@ -156,8 +153,12 @@ export default {
     max-width: 1350px;
     margin: 0 auto;
     height: 480px;
+
+
     .slide {
       display: none;
+      animation-name: fade;
+      animation-duration: 2.5s;
     }
     .slide.active {
       display: flex;
@@ -200,6 +201,15 @@ export default {
     }
   }
 
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   // ARROWS
   .arrows {
     display: flex;
@@ -214,7 +224,6 @@ export default {
     color: white;
     cursor: pointer;
 
-   
     div {
       background-color: #e1c0b0;
       border-radius: 50%;
@@ -230,11 +239,11 @@ export default {
         transform: translate(-50%, -50%);
       }
     }
-    .arrow-prev:hover{
-      background-color: #D8F0E3;
+    .arrow-prev:hover {
+      background-color: #d8f0e3;
     }
-    .arrow-next:hover{
-      background-color: #D8F0E3;
+    .arrow-next:hover {
+      background-color: #d8f0e3;
     }
   }
 }

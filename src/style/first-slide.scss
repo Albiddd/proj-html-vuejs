@@ -11,80 +11,80 @@
       .img0 {
         width: 80%;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 40%;
+        transform: translateX(-40%);
       }
       // foglia rossa sx
       .img1 {
         z-index: 6;
-        bottom: 285px;
-        left: -10px;
+        bottom: 56%;
+        left: -5%;
+        width: 8%;
         opacity: 1;
-        visibility: visible;
       }
       // foglia rossa dx
       .img2 {
         z-index: 6;
-        bottom: 285px;
-        right: -10px;
+        bottom: 56%;
+        right: -1%;
+        width: 7%;
         opacity: 1;
-        visibility: visible;
       }
       //pianta verde sx
       .img3 {
         z-index: 6;
-        bottom: 48px;
-        left: -60px;
+        bottom: 9%;
+        left: -11%;
+        width: 19%;
         opacity: 1;
-        visibility: visible;
       }
       // nuvola marrone
       .img4 {
         z-index: 6;
-        bottom: 415px;
-        right: -41px;
+        bottom: 80%;
+        right: -5%;
+        width: 15%;
         opacity: 1;
-        visibility: visible;
       }
       //nuvola verde
       .img5 {
         z-index: 5;
-        bottom: 415px;
-        right: -100px;
+        bottom: 80%;
+        right: -14%;
+        width: 18%;
         opacity: 1;
-        visibility: visible;
       }
       //piantina scura sx
       .img6 {
         z-index: 6;
-        bottom: 48px;
-        left: 85px;
+        bottom: 10%;
+        left: 9%;
+        width: 7%;
         opacity: 1;
-        visibility: visible;
       }
       // piantina verde dx
       .img7 {
         z-index: 6;
-        bottom: 48px;
-        right: 50px;
+        bottom: 9%;
+        right: 9%;
+        width: 8%;
         opacity: 1;
-        visibility: visible;
       }
       // foglia verde grande dx
       .img8 {
         z-index: 6;
-        bottom: 48px;
-        right: -70px;
+        bottom: 9%;
+        right: -9%;
+        width: 14%;
         opacity: 1;
-        visibility: visible;
       }
       // fogliolina marrone dx
       .img9 {
         z-index: 6;
-        bottom: 48px;
-        right: -125px;
+        bottom: 9%;
+        right: -16%;
+        width: 7%;
         opacity: 1;
-        visibility: visible;
       }
 
     }
